@@ -1,6 +1,6 @@
-#AWS Elastic Bean Stalk
+# AWS Elastic Bean Stalk
 
-####Whats covered in this demo?
+#### Whats covered in this demo?
 1. Basic Concepts of EBS
 2. Environments vs Webservers
 3. Demo1: Create a EBS Application, Environment, Deployment with Updation
@@ -18,10 +18,10 @@ eb deploy
 ```
 
 
-URLS: 
-######Load Balancers Types
+### URLS: 
+###### Load Balancers Types
 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/load-balancer-types.html
-######EB Getting Started
+###### EB Getting Started
 https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/GettingStarted.html
-######Sample App for reference
+###### Sample App for reference
 https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/samples/java-tomcat-v3.zip
