@@ -37,7 +37,7 @@ https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/samples/java-tomcat-v3.zi
 3. Demo2: Rolling Deployment via EBCLI
 4. Demo3: Green Blue Deployments via EBCLI
 
-Demo1:
+### Demo1:
 1. Launch 4 EC2 instances accross 2 Availability Zones(Custom Security Group, VPC, Names)
 
 1.1. Copy into User Text
@@ -56,19 +56,23 @@ unzip examplefiles-elb.zip
 5. Shutdown A few instances
 6. Refresh Again
 
-Demo2: Rolling Deployment via EBCLI
+### Demo2: Rolling Deployment via EBCLI
+
 1. EB init (orginal-lab)
 2. eb create - One VPC, 2 instances, 
 3. eb deploy
 2. Change a file
-3. eb deploy
+3. eb deploy, hit URL to check if its hitting one instance and check logs simultaneously
 4. check config with eb config
 5. update health check url in eb config
-6. eb create newEnv -c newEnv
-7. Update index.php 
-7. wait for newEnv
-8. check Urls. 
-9. Once Urls are up to date
+
+### Demo3: Blue Green
+
+1. eb create newEnv -c newEnv
+2. Update index.php 
+3. wait for newEnv
+4. check Urls. 
+5. Once Urls are up to date
  eb swap newEnv --destination_name oldEnv
 
 
